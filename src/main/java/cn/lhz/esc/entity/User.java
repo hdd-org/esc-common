@@ -15,7 +15,7 @@ public class User {
 
     private List<Esc>escs;
 
-    private Map<String,Connection> connections;
+    private Map<String,Connection> connections=new HashMap<>();
 
     public String getUserId() {
         return userId;
@@ -51,7 +51,7 @@ public class User {
 
     public Map<String, Connection> getConnections()
     {
-        return new HashMap<>();
+        return this.connections;
     }
 
     public void setConnections(Map<String, Connection> connections)
