@@ -100,4 +100,21 @@ public class Esc {
     public void setUserId(String userId) {
         this.userId = userId == null ? null : userId.trim();
     }
+
+    @Override
+    public String toString()
+    {
+        return "Esc{" +
+                "escId='" + escId + '\'' +
+                ", escPublicIp='" + escPublicIp + '\'' +
+                ", escName='" + escName + '\'' +
+                ", escAlias='" + escAlias + '\'' +
+                ", escUsername='" + escUsername + '\'' +
+                ", escPassword='" + escPassword + '\'' +
+                ", escPort='" + escPort + '\'' +
+                ", escManufactor='" + escManufactor + '\'' +
+                ", escCreateTime='" + escCreateTime + '\'' +
+                ", userId='" + userId + '\'' +
+                '}';
+    }
 }
